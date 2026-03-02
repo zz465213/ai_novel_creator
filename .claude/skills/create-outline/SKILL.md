@@ -1,6 +1,7 @@
 ---
 name: create-outline
 description: 規劃故事大綱與生成完整創作路線圖。當使用者說「幫我寫大綱」、「規劃故事結構」、「/create-outline」、「我想把故事情節整理清楚」、「角色設定怎麼安排」或任何關於故事規劃的需求時，立即使用此 skill。此指令將宏觀的故事構思轉化為逐場戲的可執行任務清單，存放於對應的小說專案目錄中。
+disable-model-invocation: true
 ---
 
 # /create-outline — 故事規劃與大綱生成

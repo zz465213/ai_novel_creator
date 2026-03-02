@@ -1,6 +1,7 @@
 ---
 name: write-scenes
 description: 執行場景撰寫任務，將規劃轉化為實際小說正文。當使用者說「開始寫」、「寫下一場戲」、「繼續我的小說」、「/write-scenes」、「寫第X章」、「接著上次的進度」或任何要求產出小說文字的請求時，立即使用此 skill。此指令會同時參照寫作標準、小說設定與任務大綱，將場景正文輸出至對應小說的 chapters/ 目錄。
+disable-model-invocation: true
 ---
 
 # /write-scenes — 場景撰寫與進度管理

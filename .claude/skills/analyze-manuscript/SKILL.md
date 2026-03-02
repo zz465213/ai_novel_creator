@@ -1,6 +1,7 @@
 ---
 name: analyze-manuscript
 description: 將現有稿件導入 Novel-OS 框架。當使用者說「我已經寫了一些章節」、「幫我分析現有稿件」、「/analyze-manuscript」、「我想把正在寫的小說遷移到這裡」或提供已完成的小說文字時，立即使用此 skill。此指令會自動偵測寫作風格、整合既有內容，並在 .novel-os/novels/[編號-故事名稱]/ 下建立完整的配置結構。
+disable-model-invocation: true
 ---
 
 # /analyze-manuscript — 既有稿件導入與分析

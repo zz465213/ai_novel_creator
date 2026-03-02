@@ -1,6 +1,7 @@
 ---
 name: plan-novel
 description: 初始化全新小說專案。當使用者說「開始一部新小說」、「我有個故事想法」、「幫我規劃一部小說」、「/plan-novel」或提供任何故事初始構想時，立即使用此 skill。此指令會在專屬目錄下建立小說專案的五大核心配置檔案，確保後續創作有一致的故事核心與風格依據。
+disable-model-invocation: true
 ---
 
 # /plan-novel — 小說專案初始化
