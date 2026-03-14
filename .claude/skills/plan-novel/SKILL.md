@@ -29,6 +29,11 @@ disable-model-invocation: true
    - 時態（過去式 / 現在式）
    - 散文風格（精煉簡練 / 抒情詩意 / 對話驅動 / 其他）
 5. **類型**：文學小說 / 推理 / 奇幻 / 愛情 / 科幻 / 其他
+6. **篇幅規格**（可選，不填則使用預設值）：
+   - 預計分幾卷？（預設：不分卷）
+   - 每卷幾話？（預設：依故事長度決定）
+   - 每話目標字數？（預設：3000 字）
+   - AI 將自動計算總字數並寫入 `writing-plan.md` 的規格鎖定區塊
 
 ---
 
@@ -38,7 +43,7 @@ disable-model-invocation: true
 
 1. 決定編號（掃描 `.novel-os/novels/` 現有目錄）
 2. 建立目錄：`.novel-os/novels/[編號-故事名稱]/`
-3. 同步建立章節目錄：`.novel-os/novels/[編號-故事名稱]/chapters/`
+3. 依卷數建立卷資料夾：`.novel-os/novels/[編號-故事名稱]/Vol1/`（其餘卷於撰寫時依序建立）
 4. 依序建立以下五個配置檔案：
 
 ---
@@ -110,10 +115,13 @@ disable-model-invocation: true
 ```markdown
 # [小說標題] — 寫作計畫
 
+## 規格鎖定（強制遵守，/write-scenes 以此為唯一字數權威）
+- 全書結構：X卷 × X話/卷 = 共 XX 話
+- 每話字數：最少 XXXX 字，目標 XXXX 字，上限 XXXX 字
+- 全書預估總字數：約 XX 萬字
+
 ## 專案概況
 - 專案目錄：.novel-os/novels/[編號-故事名稱]/
-- 預估字數：
-- 預計章節數：
 - 目標完成日期：
 
 ## 創作階段
@@ -125,10 +133,10 @@ disable-model-invocation: true
 - 目標日期：
 
 ### 階段二：初稿期
-- [ ] 第一幕（chapter-01.md ～ chapter-XX.md）
-- [ ] 第二幕（chapter-XX.md ～ chapter-XX.md）
-- [ ] 第三幕（chapter-XX.md ～ chapter-XX.md）
-- 目標日期：
+- [ ] 第一卷（Vol1/ch1.md ～ Vol1/chXX.md）完成日期：
+- [ ] 第二卷（Vol2/chXX.md ～ Vol2/chXX.md）完成日期：
+- [ ] 第三卷（依此類推）
+- 各卷完成後自動生成 `VolN/vol-summary.md`
 
 ### 階段三：修稿期
 - [ ] 整體結構調整
